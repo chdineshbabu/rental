@@ -1,0 +1,3 @@
+colors: #ffffff //White
+        #000000 //Black
+        #C92C6D //Primary color

@@ -1,9 +1,10 @@
-import './App.css';
+import './common/styles.css'
+import Navbar from './components/Navbar'
 
 function App() {
   return (
-   <div>
-    Rental App
+   <div className='app'>
+    <Navbar />
    </div>
   );
 }
