@@ -6,6 +6,7 @@ import DashForm from '../components/DashForm';
 import {getDocs, collection} from 'firebase/firestore'
 import { db } from '../configuration/firebase'
 import { useEffect, useState } from 'react'
+import { Navigate } from 'react-router-dom';
 
 function Dashboard() {
   const [user] = useAuthState(auth);
@@ -22,7 +23,7 @@ function Dashboard() {
     <div className='dashboard'>
       <div className='dash-container'>
         <div className='dash-top'>
-          <h1>Rental</h1>
+          <a style={{cursor:"pointer"}} href='/home'>Rental</a>
           <div className='dash-user'>
             <h3>{user?.displayName}</h3>
             <img class="profile-img" src={user?.photoURL} />

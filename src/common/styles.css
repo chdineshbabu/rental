@@ -151,6 +151,11 @@ img {
   object-fit: cover;
   border: 2px solid var(--theme-color);
   margin-left: 22px;
+  transition: all 0.2s ease;
+}
+.profile-img:hover{
+  scale: 1.1;
+  cursor: pointer;
 }
 /*-------------------------------------------------------------Home page Css----------------------------------------------------*/
 .home {
