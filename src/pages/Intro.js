@@ -31,7 +31,7 @@ function Intro() {
 
   return (
     <div className="intro">
-      <h1 className="font-primary">Apartment Rental </h1>
+      <h1 className="font-primary" style={{fontSize:"36px"}}>Apartment Rental </h1>
       <br />
       <div className={`container ${isSignUpActive ? "right-panel-active" : ""}`} id="container">
 
