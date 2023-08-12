@@ -36,7 +36,7 @@ const onCreatePost = async (data) => {
             username: user?.displayName,
             userId: user?.uid,
         })
-        navigate("/dashboard")
+        navigate(0)
     }
     // Image storage config
     const [imageUpload, setImageUpload] = useState(null);
