@@ -11,7 +11,7 @@ function Cards(props) {
         
   <div class="nft">
     <div class='main'>
-      <img class='tokenImage' src={post.imgurl} alt="NFT" />
+      <img class='tokenImage' src={post.imgurl} alt="" />
       <h2>{post.property}</h2>
       <p class='description'>{post.description}</p>
       <div class='tokenInfo'>

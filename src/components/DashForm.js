@@ -45,9 +45,9 @@ const onCreatePost = async (data) => {
 
     const uploadImage = () => {
         if (imageUpload == null) return;
-        const imageRef = ref(storage, `images/${imageUpload.name + v4()}`);
+        const imageRef = ref(storage, `images/${imageUpload.name}`);
         uploadBytes(imageRef, imageUpload).then(() => {
-            alert("Image Uploded")
+            
         });
 
         getDownloadURL(imageRef)
@@ -56,6 +56,7 @@ const onCreatePost = async (data) => {
             })
             .catch((error) => {
                 console.error('Error getting download URL:', error);
+                alert("Click on Upload again")
             });
 
     }
