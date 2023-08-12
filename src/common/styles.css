@@ -450,3 +450,22 @@ img {
     scale: 1.1;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
+
+  /*-----------------------------------------------------Footer Css ----------------------------------------------------------------*/
+
+  .footer{
+    min-height: 5vh;
+    margin: 2rem;
+    color: white;
+  }
+  .beta{
+    position: absolute;
+    color: white;
+    font-weight: 500;
+    right: 2%;
+    bottom: 3%;
+    opacity: 0.7;
+  }
+  .beta:hover{
+    opacity: 1;
+  }

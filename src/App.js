@@ -18,6 +18,10 @@ function App() {
       <Route path="/dashboard" element = {<Dashboard />}>
       </Route>
     </Routes>
+    <div className="beta">
+        <p>Beta Version</p>
+        <p style={{fontWeight:'200', fontSize:'12px'}}>Under Development</p>
+      </div>
   </BrowserRouter>
   );
 }

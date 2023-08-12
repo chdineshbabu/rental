@@ -8,6 +8,7 @@ import DashForm from '../components/DashForm';
 import {getDocs, collection} from 'firebase/firestore'
 import { db } from '../configuration/firebase'
 import { useEffect, useState } from 'react'
+import Footer from '../components/Footer'
 
 function Home() {
 
@@ -27,7 +28,7 @@ function Home() {
         <div className='card-grid'>
         {postsList?.map((post)=> <Cards post={post}/>)}
         </div>
-
+        <Footer />
     </div>
   )
 }
