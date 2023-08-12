@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import React, { useState } from 'react';
 import "./intros.css";
 import googleLogo from '../Asserts/google-logo.png';
-import home from "./home.png";
+ 
 function Intro() {
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   let interval = null;
@@ -33,13 +33,8 @@ function Intro() {
 
   return (
     <div class="cont">
-      <section class="parallax">
-    <div class="background bg-1"></div>
-    <h1 class="maintex hp" data-value="HYPERPLEXED">Welcome to   Apartment Rental</h1>
-    <img class="homeim" src={home}  />
-
-    </section>
-    <section class="normal">
+      
+     
     <div className="intro">
       <h1 className="font-primary" style={{fontSize:"36px"}}>Apartment Rental </h1>
       <br />
@@ -95,7 +90,7 @@ function Intro() {
         {/* ... */}
       </footer>
     </div>
-    </section>
+     
     
     </div>
   );
