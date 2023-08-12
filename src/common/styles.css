@@ -459,7 +459,7 @@ img {
     color: white;
   }
   .beta{
-    position: absolute;
+    position:fixed;
     color: white;
     font-weight: 500;
     right: 2%;
