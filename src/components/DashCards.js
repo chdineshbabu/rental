@@ -9,7 +9,7 @@ function DashCards(props) {
     <div>
         <div class="max-w-md md:max-w-xl px-2 pt-3 dash-cd">
             <div class="bg-transprent shadow-xl rounded-lg overflow-hidden md:flex">
-                <div class="bg-cover bg-bottom h-56 md:h-auto md:w-56" style={{backgroundImage: 'url(https://images.unsplash.com/photo-1517736996303-4eec4a66bb17?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1268&q=80)'}}>
+                <div class="bg-cover bg-bottom h-56 md:h-auto md:w-56" style={{backgroundImage: post.imgurl}}>
                 </div>
                 <div>
                     <div class="p-4 md:p-2">
