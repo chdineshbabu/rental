@@ -37,6 +37,7 @@ function Intro() {
      
     <div className="intro">
       <h1 className="font-primary" style={{fontSize:"36px"}}>Apartment Rental </h1>
+      {isSignUpActive? <h2 style={{fontSize:"25px",fontWeight:"600"}}>Seller Login</h2>:<h2 style={{fontSize:"25px",fontWeight:"600"}}>Buyer Login</h2>}
       <br />
       <div className={`container ${isSignUpActive ? "right-panel-active" : ""}`} id="container">
 

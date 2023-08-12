@@ -437,3 +437,16 @@ img {
     background-color: #ff4b2b;
     cursor: pointer;
   }
+  .home-txt{
+    position: relative;
+    top: 27%;
+    left: 58%;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 12px 30px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+  }
+  .home-txt:hover{
+    scale: 1.1;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
