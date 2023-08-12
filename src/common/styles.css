@@ -396,8 +396,7 @@ img {
   }
   .form-btn{
       border-radius: 10px;
-      border: 1px solid #FF4B2B;
-      background-color: #FF4B2B;
+      border: 1px solid #ff4b2b;
       color: #FFFFFF;
       font-size: 12px;
       font-weight: bold;
@@ -405,4 +404,13 @@ img {
       letter-spacing: 1px;
       text-transform: uppercase;
       transition: transform 80ms ease-in;
+  }
+  .form-btn:hover{
+    background-color: #ff4b2b;
+    cursor: pointer;
+  }
+  .group p{
+    color: rgba(255, 255, 255, 0.614);
+    font-size: 11px;
+    
   }
