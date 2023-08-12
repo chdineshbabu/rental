@@ -328,7 +328,6 @@ img {
   .dash-container{
     user-select: none;
     max-width: 300px;
-    margin: 2rem auto 0rem auto;
     border: 1px solid #ffffff22;
     background-color: #282c34;
     background: linear-gradient(0deg, #282c34 0%, rgba(17, 0, 32, 0.5) 100%);
@@ -339,7 +338,7 @@ img {
     overflow: hidden;
     transition: 0.5s all;
     min-width: 80%;
-    min-height: 90%;
+    max-height: 95%;
   }
   .dash-top{
     display: flex;
@@ -377,7 +376,7 @@ img {
   }
   .dash-form{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     margin: 1.5rem 0rem;
     min-width: 55vh;
     min-height: 70vh;
@@ -387,4 +386,23 @@ img {
   }
   .dash-cd:hover{
     scale: 1.05;
+  }
+  .form-db{
+    margin: 3rem 0rem;
+  }
+  .group{
+    display: flex;
+    flex-direction: column;
+  }
+  .form-btn{
+      border-radius: 10px;
+      border: 1px solid #FF4B2B;
+      background-color: #FF4B2B;
+      color: #FFFFFF;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 12px 8.5rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: transform 80ms ease-in;
   }
