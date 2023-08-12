@@ -35,11 +35,13 @@ const onCreatePost = async (data) => {
             ...data,
             username: user?.displayName,
             userId: user?.uid,
+            imgurl: Url,
         })
-        navigate("/dashboard")
+        navigate(0)
     }
     // Image storage config
     const [imageUpload, setImageUpload] = useState(null);
+    const [Url,setUrl] = useState(null);
 
     const uploadImage = () => {
         if (imageUpload == null) return;
@@ -50,7 +52,7 @@ const onCreatePost = async (data) => {
 
         getDownloadURL(imageRef)
             .then((url) => {
-                console.log(url)
+                setUrl(url)
             })
             .catch((error) => {
                 console.error('Error getting download URL:', error);
@@ -84,7 +86,7 @@ const onCreatePost = async (data) => {
                         <input type="text" id="name" className='bg-transparent text-white' placeholder=""  {...register('location')} /><hr style={{ width: "300px" }} />
                         <p>{errors.location?.message}</p>
                     </div>
-                    <label class="block my-10 ">
+                    <label class="flex my-10 ">
                         <span class="sr-only">Choose profile photo</span>
                         <input type="file" onChange={(event) => { setImageUpload(event.target.files[0]) }} class="block w-full text-sm text-slate-500
                                                  file:mr-4 file:py-2 file:px-4
@@ -92,8 +94,10 @@ const onCreatePost = async (data) => {
                                                 file:text-sm file:font-semibold
                                               file:bg-violet-50 file:text-violet-700
                                             hover:file:bg-violet-100"/>
+                                            
                     </label>
-                    <input className="form-btn" onClick={uploadImage} type="submit" value="Publish" />
+                    <input className="in-btn"  onClick={uploadImage} size="4" value="upload" />
+                    <input className="form-btn" type="submit" value="Publish" />
                 </form>
             </div>
         </div>

@@ -1,6 +1,10 @@
 import React from 'react'
+import { useAuthState } from "react-firebase-hooks/auth";
+import { db, auth } from "../configuration/firebase";
 
-function DashCards() {
+function DashCards(props) {
+    const { post } = props;
+    const [user] = useAuthState(auth);
   return (
     <div>
         <div class="max-w-md md:max-w-xl px-2 pt-3 dash-cd">
@@ -9,8 +13,8 @@ function DashCards() {
                 </div>
                 <div>
                     <div class="p-4 md:p-2">
-                        <p class="font-bold text-white text-xl md:text-xl">Amsterdam Walking Tour</p>
-                        <p class="text-white md:text-xs">Explore popular tourist destinations as well as hidden local favourites.</p>
+                        <p class="font-bold text-white text-xl md:text-xl">{post.property}</p>
+                        <p class="text-white md:text-xs">{post.description}</p>
                     </div>
                     <div class="p-2 md:p-2 bg-transperent">
                         <div class="sm:flex sm:justify-between sm:items-center">
