@@ -21,7 +21,6 @@ function App() {
     <div className="beta">
         <p>Beta Version</p>
         <p style={{fontWeight:'200', fontSize:'12px'}}>Under Development</p>
-  <p style={{fontWeight:'200', fontSize:'12px'}}>Use SignIn with google</p>
       </div>
   </BrowserRouter>
   );

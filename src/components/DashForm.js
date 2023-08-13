@@ -22,6 +22,7 @@ function DashForm() {
         description: yup.string().required('You Must Add a Descriptiopn'),
         price: yup.number().required('You Must Add a Price'),
         location: yup.string().required('You Must Add a Location'),
+        contact: yup.number().required('You Must Add a Contact Number'),
 
     });
     const { register, handleSubmit, formState: { errors } } = useForm({
@@ -87,7 +88,12 @@ const onCreatePost = async (data) => {
                         <input type="text" id="name" className='bg-transparent text-white' placeholder=""  {...register('location')} /><hr style={{ width: "300px" }} />
                         <p>{errors.location?.message}</p>
                     </div>
-                    <label class="flex my-10 ">
+                    <div class="group">
+                        <label className='text-white py-1' for="name">Contact No.</label>
+                        <input type="text" id="name" className='bg-transparent text-white' placeholder=""  {...register('contact')} /><hr style={{ width: "300px" }} />
+                        <p>{errors.contact?.message}</p>
+                    </div>
+                    <label class="flex my-5 ">
                         <span class="sr-only">Choose profile photo</span>
                         <input type="file" onChange={(event) => { setImageUpload(event.target.files[0]) }} class="block w-full text-sm text-slate-500
                                                  file:mr-4 file:py-2 file:px-4

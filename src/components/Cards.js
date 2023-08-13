@@ -26,7 +26,7 @@ function Cards(props) {
       </div>
       <hr />
       <div class='creator'>
-        <p><ins>Seller:</ins> {post.username}</p>
+        <p><ins>Contact No:</ins> {post.contact}</p>
       </div>
     </div>
   </div>

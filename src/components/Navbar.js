@@ -23,6 +23,7 @@ function Navbar() {
             <input type="text" placeholder="Search" />
           </div>
           <div class="header-profile">
+          <a onClick={toDashboard} class="menu-link nav-db" href="#">Dashboard</a>
             <div class="notification">
               <span class="notification-number">0</span>
               <svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell">

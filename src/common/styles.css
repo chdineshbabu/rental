@@ -394,7 +394,7 @@ img {
     scale: 1.05;
   }
   .form-db{
-    margin: 3rem 0rem;
+    margin: 2.5rem 0rem;
   }
   .group{
     display: flex;
@@ -460,12 +460,23 @@ img {
   }
   .beta{
     position:fixed;
-    color: white;
+    color: rgb(204, 64, 64);
     font-weight: 500;
     right: 2%;
     bottom: 3%;
     opacity: 0.7;
+    mix-blend-mode: difference;
   }
   .beta:hover{
     opacity: 1;
+  }
+  .nav-db{
+    color: white;
+    padding: 0px 15px;
+  }
+  .note{
+    position: fixed;
+    top: 3%;
+    right: 2%;
+    color: rgba(32, 28, 28, 0.781);
   }

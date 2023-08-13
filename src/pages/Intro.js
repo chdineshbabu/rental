@@ -47,13 +47,15 @@ function Intro() {
 							<div class="social-container">
 
 								<img style={{
-                  marginLeft:"45px"
-                }} onClick={signUpWithGoogle} src={googleLogo} alt="logo" />
+                  marginLeft:"45px",
+                  cursor:"pointer"
+                }} onClick={signUpWithGoogle}  src={googleLogo} alt="logo" />
 
 								<span>or use your account</span>
 								 
 								<input type="email" placeholder="Email" />
 								<input type="password" placeholder="Password" />
+                
 								<button>Sign Up</button>
 							</div>
 						</form>
@@ -63,7 +65,7 @@ function Intro() {
 							<h1>Sign in</h1>
 							<div class="social-container">
 
-								<img onClick={signInWithGoogle} src={googleLogo} alt="logo" />
+								<img onClick={signInWithGoogle} style={{cursor:"pointer"}} src={googleLogo} alt="logo" />
 							</div>
 							<span>or use your account</span>
 							<input type="email" placeholder="Email" />
@@ -87,9 +89,7 @@ function Intro() {
           </div>
         </div>
       </div>
-      <footer>
-        {/* ... */}
-      </footer>
+      <p style={{fontSize:'15px',fontWeight:"400"}}> <b>Note: </b>Use only Sign in with google</p>
     </div>
      
     
