@@ -1,3 +1,9 @@
+#Note
+This project is still in development.\
+So Get start Exploring.\
+Use only sign in with google as of now.\
+The Edit option in Dashboard is Still in Development.
+
 # Rental 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
